@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    color: red;
+    list-style-type: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.menu li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu li a{
+    color: red;
+}
+.ingredientes{
+    list-style-position: inside;
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 30px;
+}
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    background-image: url("../img/paisaje.jpg");
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15%;
+}
+.caja p{
+    text-align: justify;
+    text-decoration: underline solid;
+    line-height: 20px;
+    color: aliceblue;
+}
