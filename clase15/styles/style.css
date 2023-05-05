@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+*::selection{
+    background-color: rgb(231, 95, 95);
+    color: black;
+}
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background-color: white;
+    border: 5px solid white;
+    color: blue;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 25px;
+}
+
+/** Pseudo clases */
+.menu__item:nth-child(3) a {
+    background-color: black;
+    color: white;
+}
+
+.menu__item:first-child a {
+    background-color: black;
+    color: white;
+}
+
+.menu__item a:empty{
+    background: green;
+}
+
+.menu__item a:not(.menu__link){
+    border-color: red;
+}
+
+.menu__item a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.imagenPrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-inline: 40px;
+    font-size: 40px;
+}
+
+.imagenPrincipal h2::first-letter{
+    color: blue;
+}
+
+.imagenPrincipal p {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.imagenPrincipal p::first-line{
+    color: rgb(9, 248, 9);
+}
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: rgba(49, 83, 179, 0.596);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.tarjetita__titulo{
+    font-size: 25px;
+}
+
+.tarjetita__texto{
+    font-size: 20px;
+}
+
+.pie {
+    background-color: black;
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pie p{
+    font-size: 22px;
+}
+
+.tarjetitados {
+    flex: 1.5;
+}
